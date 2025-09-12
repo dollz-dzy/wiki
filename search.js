@@ -27,7 +27,7 @@ function normalizeText(str) {
 search_btn.addEventListener("click", function()
 {   
     //input value
-    const input_value = normalizeText(search_bar.value.toLowerCase().trim());
+    const input_value = normalizeText(search_bar.value.trim());
     //show what user want to search
     if (input_value != "")
     {
@@ -62,7 +62,8 @@ search_btn.addEventListener("click", function()
 
     })
 
-    if (count_found === 0) {
+    if (count_found === 0) 
+    {
         to_find.innerHTML = "Nimic gasit!";
     }
 
