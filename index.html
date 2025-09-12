@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Dollz-Wiki</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Dollz</div>
+        <button class="menu-icon" id="menu_icon">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+    </header>
+    <div class="menu" id="menu" style="display: none;">
+        <div class="list-menu" id="list_menu"></div>
+    </div>
+    <div class="bottom-menu">
+        <a href="index.html" class="home-btn">Inapoi acasa</a>
+        <a href="#top" class="top-btn">
+            <span class="material-symbols-outlined">
+                keyboard_control_key
+            </span>
+        </a>
+    </div>
+    <main class="main">
+        <div class="welcome-con">
+            <h1>Bun venit pe Dollz-Wiki</h1>
+            <p>Pe acest site puteti gasi tot felul de informatii postate de <a href="">mine</a> si invatate , pentru orice eroare gasiti pe site va rog <a href="contact_me.html">contactati-ma</a></p>
+            <p>Versiunea site-ului este <a href="">D12M9Y25-B1</a> pentru mai multe info despre cei nou pe site vedeti <a href="">noutati site</a>.</p>
+        </div>
+       <h1>Articole (<div class="total_result">0</div>)</h1>
+       <div class="search-con">
+        <input type="text" name="" id="search_bar" class="search-bar" placeholder="Cauta..." autocomplete="off">
+        <button class="search-btn" id="search_btn">Cauta</button>
+        <button class="reset-search-btn" id="search_reset">Refresh</button>
+       </div>
+       <div class="search-info">
+            <div class="search-i">De gasit : <div class="" id="to_find">Nimic</div></div>
+            <div class="search-i">Rezultate : <div class="" id="finded">0</div> din <div class="total_result">0</div></div>
+       </div>
+        <div class="list" id="list">
+            <a href="wiki/alexandru_lapusneanu.html" class="elm">
+                <h1>Alexandru Lapusneanu - Costache Negruzzi</h1>
+                <p>Nuvela istorica ,1840, in revista "Dacia Literala" , domnia lui Alexandru.L in Moldova</p>
+            </a>
+        </div>
+        <div class="space"></div>
+    </main>
+</body>
+<script src="main.js"></script>
+<script src="search.js"></script>
+</html>
