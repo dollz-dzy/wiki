@@ -184,6 +184,18 @@ q
 
 }
 
+.notice 
+{
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #ffeeba;
+    border-radius: 8px;
+}
+
+
 .elm 
 {
     border: 1px solid var(--grey);
