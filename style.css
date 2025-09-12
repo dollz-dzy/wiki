@@ -111,7 +111,7 @@ p
     font-size: 16px;
 }
 
-p a
+p a 
 {
     color: var(--color-link);
     text-decoration: none;
@@ -127,6 +127,52 @@ q
     color: var(--grey);
 }
 
+.capitole 
+{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.capitole a 
+{
+    color: var(--color-link);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.capitole a:hover 
+{
+    text-decoration: underline;
+}
+
+.source 
+{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border: 1px solid var(--grey);
+    background-color: var(--smoke);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.source a 
+{
+    text-decoration: none;
+    color: var(--color-link);
+    padding: 10px;
+}
+
+.source a:hover 
+{
+    text-decoration: underline;
+}
 
 .list
 {
