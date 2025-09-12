@@ -20,7 +20,7 @@ window.addEventListener("scroll", function()
 var menu_content = `
     <a href="index.html">Acasa</a>
     <a href="index.html">Cauta</a>
-    <a href="index.html">Despre mine</a>
+    <a href="about_me.html">Despre mine</a>
     <a href="contact_me.html">Contact</a>
 `
 var list_menu = document.getElementById("list_menu")
