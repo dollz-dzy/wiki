@@ -18,11 +18,16 @@ total_results.forEach(elm =>
     elm.innerHTML = list_element.length;
 });
 
+function normalizeText(str) {
+    //normalizam text-ul
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
 //btn search
 search_btn.addEventListener("click", function()
 {   
     //input value
-    const input_value = search_bar.value.toLowerCase();
+    const input_value = normalizeText(search_bar.value.toLowerCase().trim());
     //show what user want to search
     if (input_value != "")
     {
@@ -31,16 +36,19 @@ search_btn.addEventListener("click", function()
 
     //result found
     let count_found = 0;
+    const words = input_value.split(/\s+/);
 
     //for each element
     list_element.forEach(elm => 
     {
         //get title and text value
-        const title = elm.querySelector("h1")?.textContent.toLowerCase() || "";
-        const text = elm.querySelector("p")?.textContent.toLowerCase() || "";
+        const title = normalizeText(elm.querySelector("h1")?.textContent || "");
+        const text = normalizeText(elm.querySelector("p")?.textContent || "");
+
+        const matchesAny = words.some(word => title.includes(word) || text.includes(word));
 
         //if title or text have input_value
-        if (title.includes(input_value) || text.includes(input_value))
+        if (matchesAny)
         {
             //show
             elm.style.display = "";
