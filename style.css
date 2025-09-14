@@ -380,9 +380,47 @@ q
     height: 200px;
 }
 
+.row 
+{
+    width: 1005;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.row-elm 
+{
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+    background-color: var(--background);
+    border: 1px solid var(--grey);
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.row-elm p 
+{
+    color: var(--grey);
+}
+
+.row-elm:hover 
+{
+    background-color: var(--smoke);
+}
+
 @media (max-width: 800px) {
 
     .list-menu
+    {
+        flex-direction: column;
+    }
+
+    .row 
     {
         flex-direction: column;
     }
