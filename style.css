@@ -35,7 +35,6 @@ body
     align-items: center;
     justify-content: space-around;
     padding: 20px 40px;
-    background-color: var(--smoke);
     border-bottom: 1px solid var(--grey);
 }
 
@@ -54,12 +53,20 @@ body
     align-items: center;
     background-color: var(--background);
     border-radius: 12px;
-    border: 1px solid var(--grey);
+    border: none;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-icon:hover 
+{
+    transition: 0.3s;
+    background-color: var(--smoke);
 }
 
 .menu-icon:active 
 {
+    transition: 0.3s;
     background-color: var(--dark-smoke);
 }
 
@@ -105,19 +112,39 @@ h1
     display: flex;
 }
 
+h2 
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 35px;
+    font-weight: 400;
+    padding: 20px 0;
+    margin: 40px 0;
+}
+
 p 
 {
     padding: 10px 20px;
     font-size: 16px;
 }
 
-p a 
+.i 
+{
+    margin: 20px 0;
+}
+
+p a
 {
     color: var(--color-link);
     text-decoration: none;
 }
 
-p a:hover 
+p a:hover  
 {
     text-decoration: underline;
 }
@@ -346,7 +373,7 @@ q
     padding: 20px;
 }
 
-.home-btn 
+.home-btn  , .autor
 {
     width: 50%;
     height: 60px;
@@ -358,6 +385,13 @@ q
     border: 1px solid var(--grey);
     border-radius: 12px;
     text-decoration: none;
+}
+
+.autor 
+{
+    padding: 0 20px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .top-btn
@@ -411,6 +445,15 @@ q
 .row-elm:hover 
 {
     background-color: var(--smoke);
+}
+
+.img 
+{
+    width: 100%;
+    height: 150px;
+    background-color: whitesmoke;
+    border-radius: 16px;
+    border: 1px solid var(--grey);
 }
 
 @media (max-width: 800px) {
