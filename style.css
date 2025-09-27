@@ -102,6 +102,13 @@ body
     color: var(--grey);
 }
 
+mark
+{
+    background-color: whitesmoke;
+    font-weight: 600;
+    color: var(--grey);
+}
+
 h1
 {
     width: 100%;
@@ -416,18 +423,20 @@ q
 
 .row 
 {
-    width: 1005;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
 .row-elm 
 {
-    width: 100%;
+    width: auto;
+    min-width: 450px;
+    max-width: 450px;
     min-height: 150px;
     height: auto;
     background-color: var(--background);
@@ -465,7 +474,15 @@ q
 
     .row 
     {
+        flex-wrap: nowrap;
         flex-direction: column;
+    }
+
+    .row-elm
+    {
+        width: 100%;
+        max-width: auto;
+        min-width: auto;
     }
 
     .home-btn
