@@ -19,7 +19,7 @@ total_results.forEach(elm =>
 });
 
 function normalizeText(str) {
-    //normalizam text-ul
+    //normalizam text-ul cu un system de chatgpt
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
 
