@@ -43,3 +43,12 @@ function RaportFunc()
 
     window.location.href = mailtoLink;
 }
+
+
+
+// deschidem imaginile intr-un tab nou
+document.querySelectorAll('img').forEach(img => {
+  img.addEventListener('click', () => {
+    window.open(img.src, '_blank');
+  });
+});

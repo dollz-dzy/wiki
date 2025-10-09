@@ -138,6 +138,9 @@ p
 {
     padding: 10px 20px;
     font-size: 16px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .i 
@@ -460,9 +463,17 @@ q
 {
     width: 100%;
     height: 150px;
-    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img
+{
+    background-color: white;
     border-radius: 16px;
     border: 1px solid var(--grey);
+    cursor: pointer;
 }
 
 @media (max-width: 800px) {
