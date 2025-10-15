@@ -148,6 +148,12 @@ p
     margin: 20px 0;
 }
 
+.m 
+{
+    padding: 10px 40px;
+    color: var(--grey);
+}
+
 p a
 {
     color: var(--color-link);
