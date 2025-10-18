@@ -33,7 +33,7 @@ function RaportFunc()
 {
     let page = document.title || window.location.pathname;
 
-    let email = "malx.alexandru@gmail.com";
+    let email = "malx.personal@gmail.com";
     let subject = "Am gasit o eroare la pagina : " + page;
     let body = "Descrierea erorii:\n\n";
 

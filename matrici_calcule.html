@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Dollz-wiki | Calcule cu matrici</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Dollz</div>
+        <button class="menu-icon" id="menu_icon">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+    </header>
+    <div class="menu" id="menu" style="display: none;">
+        <div class="list-menu" id="list_menu"></div>
+    </div>
+    <div class="bottom-menu">
+        <a href="materie_mate.html" class="home-btn">Inapoi</a>
+        <a href="#top" class="top-btn">
+            <span class="material-symbols-outlined">
+                keyboard_control_key
+            </span>
+        </a>
+    </div>
+    <main class="main">
+        <h1>
+            Calcule cu matrii
+        </h1>
+        <p>
+            Matricile se pot calcula cu alte matrici , putem efectua adunari,scaderi,inmultiri si multe altele dar nu avem inpartiri.
+        </p>
+        <div class="capitole">
+            <h1>Cuprins</h1>
+            <a href="#1">Transpusa unei matrici</a>
+            <a href="#2">Urma unei matrici</a>
+            <a href="#3">Operatii cu matrici</a>
+            <a href="#4">Adunarea unei matrici</a>
+            <a href="#5">Scaderea unei matrici</a>
+            <a href="#6">Inmultirea unei matrici cu scalar (cu numar)</a>
+            <a href="#7">Inmultirea unei matrici cu alta matrice</a>
+        </div>
+
+        <h1 id="1">Transpusa unei matrici</h1>
+        <p>Transpusa unei matrici este ca transfora o matrice , adica linile devin randuri</p>
+        <div class="img">
+            <img src="/imgs/matrix_a1.PNG" alt="">
+        </div>
+        <p>Exemplu A pe lnia 1 are : 1 , 2 , 3</p>
+        <p>Transpusa lui A se noteaza cu un mic t sus in dreapta sau stanga lui A , in unele carti e dreapta pe cand in altele e stanga. </p>
+        <div class="img">
+            <img src="/imgs/matrix_a2.PNG" alt="">
+        </div>
+        <p>Aici avem ca transpusa lui A este 1,2,3 tot la fel doar ca linia devine rand. luam de la stanga la dreapta si punem in rand de sus in jos.</p>
+
+        <h1 id="2">Urma unei matrici</h1>
+        <p>Urma unei matrici ne permite sa calculam suma a <mark>diagonalei principale</mark></p>
+        <div class="img">
+            <img src="imgs/matrix_a3.PNG" alt="">
+        </div>
+        <p>Aici avem o matrice de 3x3 de la 1 la 9</p>
+        <div class="img">
+            <img src="imgs/matrix_a4.PNG" alt="">
+        </div>
+        <p>Pentru inceput luam diagonala principala ce e de la prima linie stanga la ultima linie dreapta</p>
+        <p>Avem 1, 5 , 9 </p>
+        <div class="img">
+            <img src="imgs/matrix_a5.PNG" alt="">
+        </div>
+        <p>Luam 1,5,9 si le adunam si asa putem vedea ca urma lui A este 15</p>
+
+        <h2 id="3">Operatii cu matrici</h2>
+        <h1 id="4">Adunarea unei matrici</h1>
+        <p>Dap , matricile pot fi aduanate , si e chiar destul de simplu</p>
+        <p>Pentru inceput trebuie sa tinem minte ca pentru a aduna 2 matrici trebuie ca numarul de lini sa fie egal cu cel de randuri pe scurt sa fie o matrice <mark>patrata</mark></p>
+        <p>Bun si cum calculam ?</p>
+        <div class="img">
+            <img src="imgs/matrix_a6.PNG" alt="">
+        </div>
+        <p>Aici avem o matrice A si una B </p>
+        <p>Pentru a le aduna , facem termen cu termen</p>
+        <div class="img">
+            <img src="imgs/matrix_a7.PNG" alt="">
+        </div>
+        <p>Luam primu termen din A cu primu termen din B adica 1 cu 10 si le adunam , cat ne da? pai 11 bun am aflat primu rezultat , facem si cu restu la fel</p>
+        <div class="img">
+            <img src="imgs/matrix_a8.PNG" alt="">
+        </div>
+        <p>Aici putem vedea ca  matricile A + B ne rezulta o matrice noua cu suma sumelor a amelor matrici.</p>
+
+        <h1 id="5">Scaderea unei matrici</h1>
+        <p>Matricile pe langa adunare le putem si scadea , scaderea se face la fel ca adunarea doar ca scadem</p>
+        <div class="img">
+            <img src="imgs/matrix_a6.PNG" alt="">
+        </div>
+        <p>Sa zicem ca avem matricile A si B </p>
+        <p>De data asta hai sa facem B - A</p>
+        <p>Pentru inceput luam primu termen de la B care e 10 si primu de la A care e 1 deci 10 - 1 = 9 , acu luam in continuare la fel cu restu termenilor si ii scadem</p>
+        <div class="img">
+            <img src="imgs/matrix_a9.PNG" alt="">
+        </div>
+        <p>Dupa cum vedem fara sa vreau am reusit sa imi rezulte o matrice doar de 9</p>
+        <p>Totusi putem vedea ca e la fel ca adunarea doar ca scadem termeni in loc sai adunam</p>
+
+        <h1 id="6">Inmultirea unei matrici cu scalar (cu numar)</h1>
+        <p>Matricile pot fi inmultite cu un numar ele vor arata sub forma 3A sau nZ unde n e un numar iar Z este o matrice</p>
+        <p>Asfel cand avem 3A ne referim la faptu ca inmultim 3 ori fiecare termen din matrice</p>
+        <div class="img">
+            <img src="imgs/matrix_a3.PNG" alt="">
+        </div>
+        <p>Sa zicem ca avem o matrice A de la 1 la 9</p>
+        <p>Cerinta e sa calculam 3A</p>
+        <p>3A inseamna ca inmultim 3 ori fiecare termen din matrice , pentru inceput luam 3 * 1 = 3  apoi 3 *  2 = 6 si tot asa cu restu.</p>
+        <div class="img">
+            <img src="imgs/matrix_a10.PNG" alt="">
+        </div>
+        <p>Aici putem vedea ca 3A este 3,6,9,12,15,18,21,24,27</p>
+
+
+        <h1 id="7">Inmultirea unei matrici cu alta matrice</h1>
+        <p>O matrice se poate inmulti cu alta matrice simplu dar trebuie sa fi putin atent aici finca inmultirea e putin mai grea la inceput</p>
+        <p>Pentru inceput idea e asa , luam prima linie si inmultim cu fiecare rand din a doua matrice ,  apoi luam a doua linie si inmultim cu fiecare rand din a doua  matrice , si apoi a treia linie cu fiecare rand din a doua matrice</p>
+
+        <p>Pe scurt regula e Linie * rand </p>
+
+        <div class="img">
+            <img src="imgs/matrix_a11.PNG" alt="">
+        </div>
+        <p>Avem o matrice A si una B  de la 1 la 9</p>
+        <p>De retinut acu eu pun de la 1 la 9 doar sa explic conceptul dar in exerciti acestea pot fi numere  diferite nu neaparat de la 1 la 9</p>
+        <p>Cerinta este AB = ?</p>
+        <p>Pentru inceput ce e AB? pai AB e A * B</p>
+        <p>Bun acu stim ce trebuie sa calculam</p>
+        <div class="img">
+            <img src="imgs/matrix_a12.PNG" alt="">
+        </div>
+        <p>Bun ca sa calculam inmultirea facem prima linie de la A si primu rand de la B</p>
+        <p>Bun pentru a calcula facem primu termen cu primu termen adica 1 * 1 = 1</p>
+        <p>Apoi al doilea termn de la linie cu al doilea termen de la rand adica 2 * 4 = 8</p>
+        <p>Apoi al treilea termen cu al treilea termen  adica 3 * 7 = 21</p>
+        <p>Bun acu noi luam aceste numere si le adunam 1+8+21 = 30</p>
+        <div class="img">
+            <img src="imgs/matrix_a13.PNG" alt="">
+        </div>
+        <p>Bun acu inmultim prima linie cu al doilea rand.</p>
+        <p>1 * 2 + 2 * 5 + 3 * 8</p>
+        <p>2 + 10 + 24 = 36</p>
+        <div class="img">
+            <img src="imgs/matrix_a14.PNG" alt="">
+        </div>
+        <p>Bun acu inmultim prima linie cu al treilea rand.</p>
+        <p>1 * 3  + 2 * 6 + 3 * 9</p>
+        <p>3+12+27 = 42</p>
+        <div class="img">
+            <img src="imgs/matrix_a15.PNG" alt="">
+        </div>
+        <p>Bun acu ca am gatat prima linie ori fiecare rand am aflat prima linie din AB adica 30,36,42</p>
+        <div class="img">
+            <img src="imgs/matrix_a16.PNG" alt="">
+        </div>
+        
+        <p>Bun acu facem in continuare : </p>
+        <div class="img">
+            <img src="imgs/matrix_a17.PNG" alt="">
+        </div>
+        <p>Facem a doua linie ori fiecare rand unde ne da</p>
+        <p>66 + 61 + 96 = 223</p>
+        <div class="img">
+            <img src="imgs/matrix_a18.PNG" alt="">
+        </div>
+        <p>Facem a treia linie ori fiecare rand unde ne da</p>
+        <p>102 + 126 + 126 = 354</p>
+        <div class="img">
+            <img src="imgs/matrix_a19.PNG" alt="">
+        </div>
+        <button class="class_btn" onclick="RaportFunc()">
+            <span class="material-symbols-outlined">
+                error
+            </span>
+            Raporteaza o eroare
+        </button>
+        <div class="space"></div>
+    </main>
+</body>
+<script src="main.js"></script>
+<script src="search.js"></script>
+</html>
