@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Dollz-wiki | Determinantii  </title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Dollz</div>
+        <button class="menu-icon" id="menu_icon">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+    </header>
+    <div class="menu" id="menu" style="display: none;">
+        <div class="list-menu" id="list_menu"></div>
+    </div>
+    <div class="bottom-menu">
+        <a href="materie_mate.html" class="home-btn">Inapoi</a>
+        <a href="#top" class="top-btn">
+            <span class="material-symbols-outlined">
+                keyboard_control_key
+            </span>
+        </a>
+    </div>
+    <main class="main">
+        <h1>
+            Determinantii
+        </h1>
+        <p>Determinantii ne permit sa transformam o matrice intr-un singur numar</p>
+        <div class="capitole">
+            <h1>Cuprins</h1>
+            <a href="#1">Cum arata Determinantii</a>
+            <a href="#2">Determinantu unei matrici 2x2</a>
+            <a href="#3">Determnanti unei matrici 3x3</a>
+        </div>
+        <h1 id="1">Cum arata Determinantii</h1>
+        <div class="img">
+            <img src="imgs/matrici1.PNG" alt="">
+        </div>
+        <p>Deetrminantii se scriu ca det A unde det e determinant si A e o matrice.</p>
+        <p>Determinantu unei matrii merge doar pe matrici patratice</p>
+        <p>Avem cateva mici formule ce le putem folosi pentru a calcula determinantii</p>
+        <h1 id="2">Determinantu unei matrici 2x2</h1>
+        <div class="img">
+            <img src="imgs/matrici2.PNG" alt="">
+        </div>
+        <p>Sa zicem ca avem matricea A</p>
+        <p>Pentru a calcula det A avem fomrula ab-cd unde ab e prima linie iar cd e a doua linie</p>
+        <p>a = 1 , b = 2 , c = 3  iar d=4</p>
+        <p>1 * 2 = 2 iar 3 * 4 = 12 </p>
+        <p> deci 2-12 = -10</p>
+
+        <div class="img">
+            <img src="imgs/matrici3.PNG" alt="">
+        </div>
+
+        <p>Aici putem vedea ca det A ne da -10</p>
+
+        <h1 id="3">Determnanti unei matrici 3x3</h1>
+        <p>Aici putem folosi mai mute formule printre care <mark>metoda lui Sarus</mark> si <mark>metoda triunghiurilor</mark></p>
+        <p><mark>Metoda lui Sarus</mark> este o metoda mai usoara ,pentru inceput rescriem primele 2 randuri ale matrici sub ultimul rand</p>
+        <div class="img">
+            <img src="imgs/matrici4.PNG" alt="">
+        </div>
+        <p>Sa zicem ca avem aceasta matrice A</p>
+        <div class="img">
+            <img src="imgs/matrici5.PNG" alt="">
+        </div>
+        <p>Copiem primele 2 randuri si le scriem sub</p>
+        <div class="img">
+            <img src="imgs/matrici6.PNG" alt="">
+        </div>
+        <p>Dupa acesta luam coltu din stanga sus si tragem o linie pana in celalt colt</p>
+        <p>Bun acu calculam avem 1 ,5,9 le inmultim si ne da 5*9= 45</p>
+        <p>Bun acu punem + si trecem la urmatoarea linie</p>
+        <p>De unde am inceput trecem cu un rand in jos daca data trecuta am inceput de la 1 acu incepem de la 4 finca e sub 1 si tragem o linie noua</p>
+        <div class="img">
+            <img src="imgs/matrici7.PNG" alt="">
+        </div>
+        <p>Bun calculam 4,8,3 si ne da 12 * 8 = 96</p>
+        <p>Bun acu trecem cu un rand mai jos adica daca anterior o fost 4 acu e 7 si tragem o linie</p>
+        <div class="img">
+            <img src="imgs/matrici8.PNG" alt="">
+        </div>
+        <p>Acu calculam 7,2,6 ce ne da 12 * 7 = 84</p>
+        <p>Bun acu ca avem primele 3 numere le adunam , 45 + 96 + 84 = 225</p>
+        <p>Acu facema celasi lucru dar din coltu opus adica din dreapta</p>
+        <div class="img">
+            <img src="imgs/matrici9.PNG" alt="">
+        </div>
+        <p>Avem 3 , 5, 7 care ne da 15 * 7 = 105</p>
+        <p>Acu trecem cu un rand in jos</p>
+        <div class="img">
+            <img src="imgs/matrici10.PNG" alt="">
+        </div>
+        <p>Bun acu avem noi numere de calculat adica 6,8,1 = 48</p>
+        <p>Buna cu trecem cu un rand in jos adica de la 9 tragem o linie</p>
+        <div class="img">
+            <img src="imgs/matrici11.PNG" alt="">
+        </div>
+        <p>Bun avem 9 ,2 ,1 care ne da 9*2 = 18 </p>
+        <p>Bun acu ca avem cele 3 numere noi , le vom scadea nu aduna ca pe primele</p>
+        <p>105-48-18 care ne da 39</p>
+        <p>Acu avem 2 numere 225 si 39 , pe acestea le scadem si ne da 186</p>
+        <div class="img">
+            <img src="imgs/matrici12.PNG" alt="">
+        </div>
+        <p>Asa putem vedea ca det A este 186</p>
+        <p>Formula mica e : a+b+c - d-e-f</p>
+        <button class="class_btn" onclick="RaportFunc()">
+            <span class="material-symbols-outlined">
+                error
+            </span>
+            Raporteaza o eroare
+        </button>
+        <div class="space"></div>
+    </main>
+</body>
+<script src="main.js"></script>
+<script src="search.js"></script>
+</html>
