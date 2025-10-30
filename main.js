@@ -1,6 +1,7 @@
 var menu_btn = document.getElementById("menu_icon")
 var menu = document.getElementById("menu")
 
+
 menu_btn.addEventListener("click", function()
 {
     if (menu.style.display === "none" || menu.style.display === "") 
@@ -15,6 +16,14 @@ menu_btn.addEventListener("click", function()
 window.addEventListener("scroll", function() 
 {
     menu.style.display = "none";
+});
+
+document.addEventListener('click', function(event) {
+  document.querySelectorAll('details[open]').forEach(details => {
+    if (!details.contains(event.target)) {
+      details.open = false; 
+    }
+  });
 });
 
 var menu_content = `
