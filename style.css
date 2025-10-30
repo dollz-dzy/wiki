@@ -192,6 +192,17 @@ q
     text-decoration: underline;
 }
 
+.capitole .low
+{
+    padding: 10px 50px;
+    
+}
+
+.capitole .low::before 
+{
+    content: "> ";
+}
+
 .source 
 {
     width: 100%;
