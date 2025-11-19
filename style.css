@@ -534,7 +534,84 @@ summary span
     cursor: pointer;
 }
 
+
+/*Tbale test*/
+
+
+.table 
+{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    border-radius: 12px;
+}
+
+
+.table-row:last-child
+{
+    border-bottom: 0;
+}
+
+.table-row 
+{
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.table-item:first-child
+{
+    border-left: 0;
+}
+
+.table-item:last-child
+{
+    width: 40%;
+}
+
+.table-item:only-child
+{
+    width: 100%;
+}
+
+.table-item 
+{
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center; 
+    border-left: 1px solid black;
+}
+
+.table-item a
+{
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.table-item a:hover 
+{
+    text-decoration: underline;
+}
+
+.table-item p 
+{
+    color: gray;
+    word-spacing: 1.5px;
+    padding: 0;
+}
+
 @media (max-width: 800px) {
+
 
     .list-menu
     {
