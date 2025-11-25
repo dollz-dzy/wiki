@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Dollz-Wiki | Matrici X(a) X(b)</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Dollz</div>
+        <button class="menu-icon" id="menu_icon">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+    </header>
+    <div class="menu" id="menu" style="display: none;">
+        <div class="list-menu" id="list_menu"></div>
+    </div>
+    <div class="bottom-menu">
+        <a href="materie_mate.html" class="home-btn">Inapoi</a>
+        <a href="#top" class="top-btn">
+            <span class="material-symbols-outlined">
+                keyboard_control_key
+            </span>
+        </a>
+    </div>
+    <main class="main">
+        <h2>
+            Matrici de forma X(a)X(b)
+        </h2>
+        <p class="i">
+            Pentru calculele de genu : X(a)X(b) = X(a+b+2ab)
+        </p>
+        <details>
+            <summary>
+            <div>Cuprins</div>
+                <span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+            </summary>
+            <div class="capitole">
+            <a href="#1">Cum arata un exercitiu?</a>
+            <a href="#2">Cum calculezi mai rapid acest tip de calcule</a>
+            </div>
+        </details>
+        <div class="min-space"></div>
+
+
+
+        <h1 id="1">Cum arata un exercitiu?</h1>
+                <div class="img">
+            <img src="imgs/math0.PNG" alt="">
+        </div>
+        <p>
+            Sa zicem ca avem matricea A de 3,3,-1,-1.
+        </p>
+        <div class="img">
+            <img src="imgs/math1.PNG" alt="">
+        </div>
+        <p>Si ni se cere sa aratam ca X(a) * X(b) este egal cu X(a+b+2ab)</p>
+        <div class="img">
+            <img src="imgs/math2.PNG" alt="">
+        </div>
+        <p>Formula este X(a) = I_2 + aX</p>        
+        <p>In cazu nostru ramane X si a,b dar uneori se pot schimba.</p>
+        <p>Luam de sus X(a) care deja stim este I_2 + aX , dar avem si X(b) ce il calculam la fel doar ca inlocuim a cu b</p>
+        <p>Adica X(b) = I_2 + bX</p>
+        <p>Le inmultim intre cele finca asta ne cere sus : si vom avea parantezele (I_2 + aX) (I_2 + bX)</p>
+        <div class="img">
+            <img src="imgs/math3.PNG" alt="">
+        </div>
+        <p>Idea e asa am luam ambele paranteze si leam desfacut.</p>
+        <p>Cum anume? Am luat fiefieacrecre termen din prima paranteza si am inmultit cu termeni din cea de a doua paranteza , si invers asfel am ramas cu :</p>
+        <p>X(a)X(b) = I_2^2 + aA + bA + abA</p>
+        <p>Aici I_2^2 il putem nota ca I_2 finca I_2 * I_2 este I_2.</p>
+        <p>De ce I_2 dispare cand il inmultim cu aA,bA de sus?</p>
+        <p>FInca I_2 * orice matrice ne da acea matrice e ca si cum ai inmulti cu 1 un numar , iti va da acelasi numar</p>
+        <p>Bun acu ce facem avem : I_2 + aA + bA + abA^2</p>
+        <p>De aici din tot acest carnat urat avem o matrice ce no stim si anume A^2, de ce? finca A il stim este matricea de sus dar A^2 nu stim.</p>
+        <p>Rezolvam A^2 , A^2 = A * A</p>
+       
+
+        <div class="img">
+            <img src="imgs/math4.PNG" alt="">
+        </div>
+        <p>Inmultim matricea A cu ea in sine finca A^2 = A * A</p>
+        <p>Acu inmultim normal Linie * Coloana (daca nu sti cum se inmultesc matricile 2x2 vezi <a href="matrici_calcule.html">Calcule cu matrici</a> )</p>
+        <div class="img">
+            <img src="imgs/math5.PNG" alt="">
+        </div>
+        <p>Aici putem vedea ca Matricia A^2 ne rezulta : 6 , 6 , -2 , -2</p>
+        <p>Acu luam Tr A (umbra matrici A , daca nu sti vezi <a href="matrici_calcule.html">calcule matrici</a> )</p>
+    
+         <div class="img">
+            <img src="imgs/math6.PNG" alt="">
+        </div>
+        <p>Umbra se ia prin adunarea pe diagonala principala, si anume 3 + (-1) = 2</p>
+        <p>Acu luam A^2 si il impartim la 2 (Tr A)</p>
+        <div class="img"><img src="imgs/math7.PNG" alt=""></div>
+        <p>Putem observa ca A^2 : la Tr A ne da A</p>
+        <p>Acest lucru valideaza calculul nostru.</p>
+        <h3 id="2">Cum calculezi mai rapid acest tip de calcule</h3>
+        <p>Se poate calcula mai rapid?</p>
+        <p>Raspunsul este da, si chiar foarte usor.</p>
+        <p>Ai nevoie doar sa sti formula X(a) = I_2 + aX </p>
+
+        <h1>1. Ne uitam la numarul din fata ab, daca nu avem nimic luam 1 , daca in fata lui ab sau numaurui este un semn ex + sau - , numarul il luam cu tot cu semn</h1>
+                <div class="img">
+            <img src="imgs/math8.PNG" alt="">
+        </div>
+        <p>Adica daca avem -ab luam -1 , daca avem +2ab luam 2</p>
+        <p>Acu ca avem acest numarul , am aflat Tr A , adinca mereu Tr A ne va da acest numar.</p>
+        <h1>2. Inmultim A cu numarul aflat</h1>
+        <div class="img">
+            <img src="imgs/math9.PNG" alt="">
+        </div>
+        <p>Putem vedea ca A * numarul aflat din fata ab ne da fix cat ar fi A^2, asfel am aflat A^2 din calculul nostru</p>
+        <h1>3. Acu doar inpartim A^2 la numarul aflat adica 2 in cazu nostru.</h1>
+        <div class="img"><img src="imgs/math10.PNG" alt=""></div>
+        <p>Aici putem observa ca A^2 impartit la tr A ne da A si asfel mai rapid am aratat acelasi lucru.</p>
+        
+        <button class="class_btn" onclick="RaportFunc()">
+            <span class="material-symbols-outlined">
+                error
+            </span>
+            Raporteaza o eroare
+        </button>
+        <div class="space"></div>
+    </main>
+</body>
+<script src="main.js"></script>
+<script src="search.js"></script>
+</html>
